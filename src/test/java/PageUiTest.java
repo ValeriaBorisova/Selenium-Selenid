@@ -12,7 +12,7 @@ public class PageUiTest {
         open("http://localhost:9999");
         SelenideElement form = $("form");
         form.$("[data-test-id=name] input").setValue("Сергей Павлович Королев ");
-        form.$("[data-test-id=phone] input").setValue();
+        form.$("[data-test-id=phone] input").setValue("+79456955580");
         form.$("[data-test-id=agreement]").click();
         form.$("button[type=button]").click();
         $("[data-test-id=order-success]")

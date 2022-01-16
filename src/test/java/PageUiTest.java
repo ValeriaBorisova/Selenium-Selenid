@@ -39,7 +39,7 @@ public class PageUiTest {
         driver.get("http://localhost:9999/");
         WebElement feedbackFormName = driver.findElement(By.cssSelector("[data-test-id='name']"));
         feedbackFormName.findElement(By.className("input__control")).sendKeys("Сергей Королев");
-        WebElement feedbackFormPhone = driver.findElement(By.cssSelector("[data-test-id='phone']"));
+        WebElement feedbackFormPhone = driver.findElement(By.cssSelector("[data-test-id=]"));
         feedbackFormPhone.findElement(By.className("input__control")).sendKeys("+79574355580");
         driver.findElement(By.className("checkbox__box")).click();
         driver.findElement(By.tagName("button")).click();
